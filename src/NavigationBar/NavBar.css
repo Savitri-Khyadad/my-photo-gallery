@@ -1,0 +1,38 @@
+.Logo {
+    width: 200px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.NavBar{
+    width: 96%;
+    height: 15%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;  
+}
+
+.MenuBar{
+    display: flex;
+    /* flex: 1; */
+    justify-content: left;
+}
+.Button2 {
+    flex: 1;
+    padding: 1em;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.Button1 {
+    order: -1;
+    padding: 1em;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}

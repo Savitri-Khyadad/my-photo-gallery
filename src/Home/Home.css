@@ -1,315 +1,130 @@
-/* 
-.box:before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(-45deg, #FFEAA7 28%, #000000 124% );
-    transform: translate3d(-34px, -28px, 0) scale(0.97);
-    filter: blur(20px);
-    opacity: var(0.44);
-    transition: opacity 0.3s;
-    border-radius: inherit;
-} */
-
-/* 
-* Prevents issues when the parent creates a 
-* stacking context. (For example, using the transform
-* property )
-*/
-/* .box::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    border-radius: inherit;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; 
 }
-*/
-
-/* *{
-    box-sizing: border-box;             
-} */
-
-/* .column {
-    float: left;
-    width: 40%;
-    padding: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    background-color:#aaa;
-    flex: 50%;
-} */
-
-/* .row:after {
-    content: "";
-    display: flex;
-    clear: both;
-} */
-
 .Home {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* height: 100vh; */
     position: relative;
-    width: 1600px;
-    height: 1200px;
-    background: radial-gradient(50% 88.89% at 50% 50%, #22A9B1 0%, #222943 100%);
-}
-
-/* .Vector {
-    position: absolute;
-    width: 1799.06px;
-    height: 1212.55px;
-    left: 1586px;
-    top: -12.55px;
-    border: 4px solid rgba(255, 255, 255, 0.1);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-} */
-
-.Nav {
-    position: absolute;
-    width: 1592.04px;
-    height: 80.78px;
-    left: 7.96px;
-    top: 10.61px;
-}
-
-.Logo {
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    left: 41px;
-    top: 19px;
-
-    font-family: 'Source Serif 4';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 66px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.016em;
-
-    color: #FFFFFF;
-
-}
-
-.HomeNav {
-    position: absolute;
-    width: 99px;
-    height: 54px;
-    left: 1006px;
-    top: 29px;
-
-    font-family: 'Source Serif 4';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.016em;
-
-    color: #FFFFFF;
-
-}
-
-.HomeSignIn {
-    /* SIGN IN */
-    position: absolute;
-    width: 99px;
-    height: 54px;
-    left: 1159px;
-    top: 29px;
-
-    font-family: 'Source Serif 4';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.016em;
-
-    color: #FFFFFF;
-}
-
-.HomeAboutUs {
-    position: absolute;
-    width: 126px;
-    height: 54px;
-    left: 1312px;
-    top: 29px;
-
-    font-family: 'Source Serif 4';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.016em;
-
-    color: #FFFFFF;
-}
-
-.MainBox {
-    position: absolute;
-    width: 1408.22px;
-    height: 822px;
-    left: 96px;
-    /* top: 10px; */
-}
-
-.PhotoGallery {
-    position: absolute;
-    width: 551px;
-    height: 104px;
-    left: 96px;
-    top: 156px;
-
-    font-family: 'Source Serif 4';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 75.6538px;
-    line-height: 104px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.016em;
-
-    color: #F7F8FD;
-}
-
-.ListBox {
+    overflow: hidden;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 34.09px;
-
-    position: absolute;
-    width: 329.9px;
-    height: 272.7px;
-    left: 138.22px;
-    top: 350px;
-
 }
 
-.List {
+.Main{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 22.72px;
-
-    width: 329.9px;
-    height: 68.17px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    justify-content: space-evenly;
+    flex: 1;
+    margin-top: 2%;
 }
 
-.Tick {
-    width: 68.17px;
-    height: 68.17px;
-    
-    background: linear-gradient(116.71deg, #7D2E75 0%, #0059FF 131.19%);
-    border-radius: 52.8352px;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.One {
+    order: -1;
+    padding: 1em;
+    flex: 0 0 50vw;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 3%;
 }
 
-.ListContent {
-    width: 239px;
-    height: 47px;
-
-    font-family: 'Source Serif 4';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 34.0872px;
-    line-height: 47px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.016em;
-
-    color: #F7F8FD;
-   
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+h1 {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 1%;
+    animation: image 3s linear infinite;
 }
 
-.LandingImage {
-    
-    position: relative;
-    width: 700px;
-    height: 400px;
-    left: 650.22px;
-    top: 316px;
+ h2{
+    animation: image 3s linear infinite;
+}
 
-    background: url(../Images/MainImage.jpg);
-    border: 8px solid #191F38;
-    /* 1 */
+.Two img {
+    margin-top: 5%;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    animation: image 3s linear infinite;
+}
 
-    filter: drop-shadow(6.86063px 6.86063px 13.7213px #3E497A);
-    border-radius: 25px;
+@keyframes image{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity:1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-30vh);
+        opacity: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+img {
+    width: 100%;
+    height: 90%;
+}
+.Two{
+    flex: 1;
+    padding: 1em;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 12%;
+}
+
+.Three{
+    flex: 0 0 20vw;
+    padding: 1em;
 }
 
 .Footer {
-    position: absolute;
-    width: 863px;
-    height: 50px;
-    left: 369px;
-    top: 1077px;
+    height: 20vh;
+    padding: 1em;
 }
 
-.LinkedInBox {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 1182px;
-    top: 1077px;
+.FlexFooter{
+    display: flex;
+    flex: 1;
+    
+}
+.FlexFooter img {
+    width: 40px;
+    vertical-align: middle;
+  }
+
+.Link1{
+    order: -1;
+    padding: 1em;
+    flex: 0 0 20vw;
+    text-align: left;
+    margin-left: 3%;
 }
 
-.LinkedInLogo {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    background: #0A66C2;
+.Link2{
+    flex: 1;
+    padding: 1em;
 }
 
-.Elipse {
-    position: absolute;
-    width: 98px;
-    height: 99px;
-    left: -51px;
-    top: 296px;
-
-    background: rgba(217, 217, 217, 0.03);
+.Link3{
+    flex: 0 0 20vw;
+    padding: 1em;
 }
 
-.Elipse1 {
-    position: absolute;
-    width: 101px;
-    height: 102px;
-    left: 705px;
-    top: 1136px;
-
-    background: rgba(217, 217, 217, 0.07);
-}

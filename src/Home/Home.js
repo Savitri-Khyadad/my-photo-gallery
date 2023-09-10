@@ -1,42 +1,46 @@
 import "./Home.css";
+import "../NavigationBar/NavBar";
+import NavBar from "../NavigationBar/NavBar";
 
 function Home() {
   return (
     <div className="Home">
-      {/* <div className="Vector"></div> */}
-      <div className="Nav">
-        <div className="Logo">PG</div>
-        <div className="HomeNav">HOME</div>
-        <div className="HomeSignIn">SIGN IN</div>
-        <div className="HomeAboutUs">ABOUT US</div>
-      </div>
-
-      <div className="MainBox">
-        <div className="PhotoGallery">Photo Gallery</div>
-        <div className="ListBox">
-          <div className="List">
-            <div className="Tick"></div>
-            <div className="ListContent">Create Account</div>
-          </div>
-          <div className="List">
-            <div className="Tick"></div>
-            <div className="ListContent">Add Photos</div>
-          </div>
-          <div className="List">
-            <div className="Tick"></div>
-            <div className="ListContent">Free</div>
-          </div>
+      <NavBar></NavBar>
+      <div className="Main">
+        <div className="One">
+          <img src="./photo-gallery.jpg" alt="Something"></img>
         </div>
-        <div className="LandingImage"></div>
-      </div>
-
-      <div className="Footer">
-        <div className="LinkedInBox">
-          <div className="LinkedInLogo">Linkedin</div>
+        <div className="Two">
+          <h1>Welcome to photo gallery</h1>
+          <h2>A place for all your photos!</h2>
+          <img src="./movingImage1.jpg" alt="image1"></img>
+          <img src="./movingImage2.jpg" alt="image1"></img>
+          <img src="./movingImage3.jpg" alt="image1"></img>
+          <img src="./movingImage4.jpg" alt="image1"></img>
         </div>
       </div>
-      <div className="Elipse"></div>
-      <div className="Elipse1"></div>
+      <footer className="Footer">
+        <div className="FlexFooter">
+          <div className="Link1">
+            <a
+              href="https://www.linkedin.com/in/savitri-khyadad/"
+              target="./dummy"
+            >
+              <img src="./linkedin.svg" alt="icon1" />
+            </a>
+          </div>
+          <div className="Link2">
+            <a href="https://github.com/Savitri-Khyadad" target="./dummy">
+              <img src="./github.svg" alt="icon2" />
+            </a>
+          </div>
+          <div className="Link3">
+            <a href="https://www.instagram.com/" target="./dummy">
+              <img src="./instagram.svg" alt="icon" />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
