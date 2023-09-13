@@ -8,15 +8,19 @@ function Home() {
       <NavBar></NavBar>
       <div className="Main">
         <div className="One">
-          <img src="./photo-gallery.jpg" alt="Something"></img>
+          {/* <img src="./photo-gallery.jpg" alt="Something"></img> */}
+          <h1>PHOTO GALLERY</h1>
+          <h3>A place for all your photos!</h3>
+          <button type="button" className="Button-01">
+            Contact Us
+          </button>
         </div>
         <div className="Two">
-          <h1>Welcome to photo gallery</h1>
-          <h2>A place for all your photos!</h2>
-          <img src="./movingImage1.jpg" alt="image1"></img>
+          {/* <img src="./movingImage3.jpg" alt="image1"></img> */}
+          {/* <img src="./movingImage1.jpg" alt="image1"></img>
           <img src="./movingImage2.jpg" alt="image1"></img>
-          <img src="./movingImage3.jpg" alt="image1"></img>
-          <img src="./movingImage4.jpg" alt="image1"></img>
+
+          <img src="./movingImage4.jpg" alt="image1"></img> */}
         </div>
       </div>
       <footer className="Footer">
@@ -37,6 +41,16 @@ function Home() {
           <div className="Link3">
             <a href="https://www.instagram.com/" target="./dummy">
               <img src="./instagram.svg" alt="icon" />
+            </a>
+          </div>
+          <div className="Link3">
+            <a href="https://www.twitter.com/" target="./dummy">
+              <img src="./twitter.svg" alt="icon" />
+            </a>
+          </div>
+          <div className="Link3">
+            <a href="https://www.gmail.com/" target="./dummy">
+              <img src="./mail.svg" alt="icon" />
             </a>
           </div>
         </div>
