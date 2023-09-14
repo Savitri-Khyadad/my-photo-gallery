@@ -9,7 +9,7 @@ function Home() {
       <div className="Main">
         <div className="One">
           {/* <img src="./photo-gallery.jpg" alt="Something"></img> */}
-          <h1>PHOTO GALLERY</h1>
+          <h1>Photo Gallery</h1>
           <h3>A place for all your photos!</h3>
           <button type="button" className="Button-01">
             Contact Us
