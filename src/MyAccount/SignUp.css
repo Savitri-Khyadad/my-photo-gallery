@@ -3,9 +3,9 @@
     box-sizing: border-box; 
 }
 
-.LogInBox{
+.SignUpBox{
     width: 600px;
-    height: 450px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     margin: auto;

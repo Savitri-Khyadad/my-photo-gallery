@@ -1,27 +1,18 @@
 import "./Home.css";
 import "../NavigationBar/NavBar";
-import NavBar from "../NavigationBar/NavBar";
 
 function Home() {
   return (
     <div className="Home">
-      <NavBar></NavBar>
       <div className="Main">
         <div className="One">
-          {/* <img src="./photo-gallery.jpg" alt="Something"></img> */}
           <h1>Photo Gallery</h1>
           <h3>A place for all your photos!</h3>
           <button type="button" className="Button-01">
             Contact Us
           </button>
         </div>
-        <div className="Two">
-          {/* <img src="./movingImage3.jpg" alt="image1"></img> */}
-          {/* <img src="./movingImage1.jpg" alt="image1"></img>
-          <img src="./movingImage2.jpg" alt="image1"></img>
-
-          <img src="./movingImage4.jpg" alt="image1"></img> */}
-        </div>
+        <div className="Two"></div>
       </div>
       <footer className="Footer">
         <div className="FlexFooter">
