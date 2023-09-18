@@ -21,7 +21,7 @@ function LogIn() {
         Forgot Password? <span>Click here</span>
       </div>
       <div className="SubmitSection">
-        <button className="Button">Back to Home</button>
+        <button className="Button">Home</button>
         <button className="Button">Login</button>
       </div>
     </div>

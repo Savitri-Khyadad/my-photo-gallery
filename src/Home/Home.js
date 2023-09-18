@@ -12,40 +12,40 @@ function Home() {
             Contact Us
           </button>
         </div>
-        <div className="Two"></div>
+        {/* <div className="Two"></div> */}
+        <footer className="Footer">
+          <div className="FlexFooter">
+            <div className="Link1">
+              <a
+                href="https://www.linkedin.com/in/savitri-khyadad/"
+                target="./dummy"
+              >
+                <img src="./linkedin.svg" alt="icon1" />
+              </a>
+            </div>
+            <div className="Link2">
+              <a href="https://github.com/Savitri-Khyadad" target="./dummy">
+                <img src="./github.svg" alt="icon2" />
+              </a>
+            </div>
+            <div className="Link3">
+              <a href="https://www.instagram.com/" target="./dummy">
+                <img src="./instagram.svg" alt="icon" />
+              </a>
+            </div>
+            <div className="Link3">
+              <a href="https://www.twitter.com/" target="./dummy">
+                <img src="./twitter.svg" alt="icon" />
+              </a>
+            </div>
+            <div className="Link3">
+              <a href="https://www.gmail.com/" target="./dummy">
+                <img src="./mail.svg" alt="icon" />
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
-      <footer className="Footer">
-        <div className="FlexFooter">
-          <div className="Link1">
-            <a
-              href="https://www.linkedin.com/in/savitri-khyadad/"
-              target="./dummy"
-            >
-              <img src="./linkedin.svg" alt="icon1" />
-            </a>
-          </div>
-          <div className="Link2">
-            <a href="https://github.com/Savitri-Khyadad" target="./dummy">
-              <img src="./github.svg" alt="icon2" />
-            </a>
-          </div>
-          <div className="Link3">
-            <a href="https://www.instagram.com/" target="./dummy">
-              <img src="./instagram.svg" alt="icon" />
-            </a>
-          </div>
-          <div className="Link3">
-            <a href="https://www.twitter.com/" target="./dummy">
-              <img src="./twitter.svg" alt="icon" />
-            </a>
-          </div>
-          <div className="Link3">
-            <a href="https://www.gmail.com/" target="./dummy">
-              <img src="./mail.svg" alt="icon" />
-            </a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

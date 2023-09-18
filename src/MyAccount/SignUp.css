@@ -102,3 +102,104 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+@media screen and (max-width:650px) {
+    
+.SignUpBox{
+    width: 90%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: rgba(234,234,234,0.3);
+    padding-bottom: 10px
+}
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Title{
+    color:rgb(118, 8, 27);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.UnderLine{
+    width: 60px;
+    height: 1px;
+    background-color: rgb(118, 8, 27);
+    border-radius: 8px;
+}
+
+.Form{
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    background: rgb(234, 234, 234);
+    border-radius: 5px;
+}
+
+.Input img {
+    margin: 0px 10px;
+    width: 20px;
+}
+
+.Input input {
+    height: 50px;
+    width: 300px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 15px;
+}
+
+.Login{
+    padding-left: 6%;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.Login span{
+    color: rgb(118, 8, 27);
+    cursor: pointer;
+}
+
+.SubmitSection{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+    margin: 5% 8%;
+}
+
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    color: whitesmoke;
+    background: rgb(118, 8, 27);
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+}

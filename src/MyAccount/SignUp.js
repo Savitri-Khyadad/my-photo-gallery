@@ -25,7 +25,7 @@ function SignUp() {
         </div>
       </div>
       <div className="SubmitSection">
-        <button className="Button">Back to Home</button>
+        <button className="Button">Home</button>
         <button className="Button">Sign Up</button>
       </div>
     </div>

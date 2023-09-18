@@ -5,16 +5,6 @@
     box-sizing: border-box; 
 }
 .Home {
-    /*background: #0F2027;  /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background-image: url('F:\WebDevelopment\my-photo-gallery\public/background-img-7.jpg'); */
-    /* background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden; */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -23,10 +13,8 @@
 .Button-01 {
     background-color: transparent;
     border: solid;
-    /* border-radius: 10%; */
     padding: 1%;
     color: whitesmoke;
-    /* color:rgb(118, 8, 27); */
     cursor: pointer;
     margin-top: 3%;
     margin-left: 8%;
@@ -35,84 +23,38 @@
 .Main{
     display: flex;
     justify-content: space-evenly;
-    flex: 1;
+    /* flex: 1; */
+    flex-direction: column;
     margin-top: 2%;
 }
 
 .One {
-    order: -1;
+    /* order: -1; */
+    flex: 1;
     padding: 1em;
-    flex: 0 0 50vw;
+    flex: 0 0 10vw;
     color:rgb(119, 8, 27);
     text-align: left;
-    margin-top: 9%;
-    margin-bottom: 9%;
-    /* margin-left: 0%; */
+    margin-top: 5%;
+    /* margin-bottom: 8%; */
 }
 
 h1 {
     font-size: 50px;
     line-height: 60px;
     padding: 1%;
-    /* animation: text1 3s linear infinite; */
     margin-left: 7%;
     font-weight: 700
 }
 
  h3{
-    /* animation: text1 3s linear infinite; */
     text-align: left;
     margin-left: 8%;
     font-weight: 700
 }
 
-/* @keyframes text1{
-    0%{
-        opacity: 0;
-    }
-    30%{
-        opacity: 1;
-        color:rgb(118, 8, 27);
-    }
-    100%{
-        opacity: 1;
-        color:rgb(118, 8, 27);
-    }
-} */
-
-
-.Two img {
-    margin-top: 5%;
-    margin-left: 40%;
-    padding: 10px;
-    width: 400PX;
-    height: 400px;
-    /* bottom: -20px; */
-    /* animation: image 3s linear infinite; */
-
-}
-
-@keyframes image{
-    0%{
-        transform: translateY(25vh);
-        opacity: 0;
-    }
-    50%{
-        opacity:1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-4vh);
-        opacity: 0;
-    }
-}
-
-
 a {
     text-decoration: none;
-    /* color: whitesmoke; */
     color:rgb(118, 8, 27);
 }
 
@@ -120,27 +62,16 @@ img {
     width: 100%;
     height: 90%;
 }
-.Two{
-    flex: 1;
-    padding: 1em;
-    /* color: whitesmoke; */
-    /* color:rgb(118, 8, 27); */
-    text-align: center;
-    /* margin-top: 5%; */
-}
 
-.Three{
-    flex: 0 0 20vw;
-    padding: 1em;
-}
 
 .Footer {
+    margin-top: 8%;
+    bottom: 0;
     height: 20vh;
 }
 
 .FlexFooter{
     display: flex;
-    /* flex: 1; */
     justify-content: right;
     margin-right: 2%;
 
@@ -152,11 +83,24 @@ img {
   }
 
 @media screen and (max-width: 1220px){
+    .One {
+        flex: 1;
+        padding: 1em;
+        flex: 0 0 10vw;
+        color:rgb(119, 8, 27);
+        text-align: left;
+        margin-top: 5%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+
     .Footer {
-        height: 8vh;
+        margin-top: 5em;
     }
     
     .FlexFooter{
+        margin-top: auto;
         display: flex;
         justify-content: space-around;
         margin-right: 2%;
@@ -179,20 +123,13 @@ img {
         font-weight: 700
     }
     
-     h3{
+    h3{
         text-align: left;
         margin-left: 22%;
         font-weight: 700
     }
 
     .Home {
-        /* background-image: url('F:\WebDevelopment\my-photo-gallery\public/background-img-6.jpg');
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        overflow: hidden; */
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -210,19 +147,20 @@ img {
     
     .Main{
         display: flex;
-        justify-content: space-evenly;
-        flex: 1;
+        /* flex: 1; */
+        min-height: 100%;
         margin-top: 2%;
     }
     
     .One {
-        order: -1;
+        /* order: -1; */
+        flex: 1;
         padding: 1em;
-        flex: 0 0 100vw;
+        flex: 0 0 10vw;
         color:rgb(119, 8, 27);
         text-align: center;
-        margin-top: 50%;
-        margin-bottom: 50%;
+        margin-top: 170px;
+        margin-bottom: 170px;
     }
     
     
@@ -231,25 +169,13 @@ img {
         color:rgb(118, 8, 27);
     }
     
-    .Two{
-        flex: 1;
-        padding: 1em;
-        text-align: center;
-
-    }
-    
-    .Three{
-        flex: 0 0 30vw;
-        padding: 1em;
-    }
-    
     .Footer {
-        height: 8vh;
+        margin-top: 2em;
     }
     
     .FlexFooter{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-right: 2%;
     
     }
