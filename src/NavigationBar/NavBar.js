@@ -12,9 +12,9 @@ function NavBar() {
     navigate("/signup");
   };
 
-  // const navigateToHome = () => {
-  //   navigate("/");
-  // };
+  const navigateToHome = () => {
+    navigate("/");
+  };
 
   return (
     <div className="NavBar">
@@ -27,6 +27,9 @@ function NavBar() {
         </button>
         <button type="button" className="Button2" onClick={navigateToLogin}>
           LOG IN
+        </button>
+        <button type="button" className="Button2" onClick={navigateToHome}>
+          LOGOUT
         </button>
       </div>
     </div>

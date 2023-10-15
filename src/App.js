@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/gallery" element={<Gallery />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        <Routes></Routes>
+        {/* <Routes></Routes> */}
       </div>
     </Router>
   );

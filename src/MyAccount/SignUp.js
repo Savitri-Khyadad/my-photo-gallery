@@ -3,6 +3,7 @@ import "./SignUp.css";
 function SignUp() {
   return (
     <div className="SignUpBox">
+      <form>
       <div className="Header">
         <div className="Title">Sign In</div>
         <div className="UnderLine"></div>
@@ -28,6 +29,7 @@ function SignUp() {
         <button className="Button">Home</button>
         <button className="Button">Sign Up</button>
       </div>
+      </form>
     </div>
   );
 }
