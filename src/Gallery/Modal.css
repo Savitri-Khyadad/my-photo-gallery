@@ -61,3 +61,33 @@
     top: 50%;
     z-index: 999;
 }
+
+@media screen and (max-width: 650px){
+    .Modal img {
+        display: block;
+        max-width: 85%;
+        max-height: 60%;
+        margin: 80px auto;
+        box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+    }
+    .Modal-Left-Arrow svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .Modal-Right-Arrow svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .Modal-Left-Arrow{
+        width: 30px;
+        height: 30px;
+    }
+
+    .Modal-Right-Arrow{
+        right: 0;
+        width: 30px;
+        height: 30px;;
+    }
+}
