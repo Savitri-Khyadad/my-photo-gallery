@@ -2,6 +2,8 @@ import React, { useContext, useState, useEffect } from "react";
 import "./LogIn.css";
 import { UserContext } from "../App";
 import { useNavigate } from "react-router-dom";
+import user from "../assets/user.svg";
+import password from "../assets/password.svg";
 
 function LogIn() {
   const { state, dispatch } = useContext(UserContext);
@@ -67,7 +69,7 @@ function LogIn() {
         </div>
         <div className="Form">
           <div className="Input">
-            <img src="./user.svg" alt="icon"></img>
+            <img src={user} alt="icon"></img>
             <input
               type="text"
               name="username"
@@ -78,7 +80,7 @@ function LogIn() {
           </div>
           <p>{errors.username}</p>
           <div className="Input">
-            <img src="./password.svg" alt="icon"></img>
+            <img src={password} alt="icon"></img>
             <input
               type="password"
               name="password"
