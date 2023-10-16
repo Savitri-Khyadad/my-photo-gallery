@@ -42,3 +42,48 @@
     cursor: pointer;
     margin: auto;
 }
+
+@media screen and (max-width:650px) {
+    .LogOutBox{
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        background: rgba(234,234,234,0.3);
+        padding-bottom: 10px
+    }
+    
+    .Header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .Title{
+        color:rgb(118, 8, 27);
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+
+    
+    .Button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 35px;
+        color: whitesmoke;
+        background: rgb(118, 8, 27);
+        border-radius: 15px;
+        border: none;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+}
