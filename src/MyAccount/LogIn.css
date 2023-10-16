@@ -111,7 +111,7 @@
 @media screen and (max-width:650px) {
     .LogInBox{
         width: 90%;
-        height: 280px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -145,7 +145,7 @@
         margin-top:20px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 6px;
     }
     
     .Input{

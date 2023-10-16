@@ -113,7 +113,7 @@
     
 .SignUpBox{
     width: 90%;
-    height: 360px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -147,7 +147,7 @@
     margin-top:20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
 }
 
 .Input{
