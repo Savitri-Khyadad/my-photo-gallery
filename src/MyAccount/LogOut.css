@@ -1,0 +1,44 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box; 
+}
+
+.LogOutBox{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* margin-top: 1%; */
+    background: rgba(234,234,234,0.3);
+    padding-bottom: 30px
+}
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.Title{
+    color:rgb(118, 8, 27);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.Button{
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    color: whitesmoke;
+    background: rgb(118, 8, 27);
+    border-radius: 20px;
+    border: none;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: auto;
+}

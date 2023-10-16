@@ -1,4 +1,5 @@
 import { UserContext } from "../App";
+import "./LogOut.css";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -13,9 +14,13 @@ function LogOut() {
   };
 
   return (
-    <div className="LogInBox">
-      <h1>You Have Logged Out!</h1>
-      <button onClick={logOutFuction}>Go to Home</button>
+    <div className="LogOutBox">
+      <div className="Header">
+        <div className="Title">You Have Logged Out!</div>
+      </div>
+      <button className="Button" onClick={logOutFuction}>
+        Go to Home
+      </button>
     </div>
   );
 }
