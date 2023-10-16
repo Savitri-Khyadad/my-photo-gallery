@@ -1,6 +1,22 @@
+import React, { useContext } from "react";
 import "./LogIn.css";
+import { UserContext } from "../App";
+import { useNavigate } from "react-router-dom";
 
 function LogIn() {
+  const { state, dispatch } = useContext(UserContext);
+
+  // const [username, setUsername] = useState("");
+  // const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
+
+  const loginFuction = () => {
+    dispatch({ type: "USER", payload: true });
+    window.alert("Login Successful!");
+    navigate("/gallery");
+  };
+
   return (
     <div className="LogInBox">
       <div className="Header">
@@ -22,7 +38,9 @@ function LogIn() {
       </div>
       <div className="SubmitSection">
         <button className="Button">Home</button>
-        <button className="Button">Login</button>
+        <button className="Button" onClick={loginFuction}>
+          Login
+        </button>
       </div>
     </div>
   );

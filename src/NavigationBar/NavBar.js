@@ -1,7 +1,11 @@
 import "./NavBar.css";
 import { useNavigate, Link } from "react-router-dom";
+import { UserContext } from "../App";
+import { useContext } from "react";
 
 function NavBar() {
+  const { state, dispatch } = useContext(UserContext);
+
   const navigate = useNavigate();
 
   const navigateToLogin = () => {
@@ -12,8 +16,31 @@ function NavBar() {
     navigate("/signup");
   };
 
-  const navigateToHome = () => {
-    navigate("/");
+  const navigateToLogout = () => {
+    navigate("/logout");
+  };
+
+  const RenderMenu = () => {
+    if (state) {
+      return (
+        <>
+          <button type="button" className="Button2" onClick={navigateToLogout}>
+            LOGOUT
+          </button>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <button type="button" className="Button1" onClick={navigateToSignUp}>
+            SIGN UP
+          </button>
+          <button type="button" className="Button2" onClick={navigateToLogin}>
+            LOG IN
+          </button>
+        </>
+      );
+    }
   };
 
   return (
@@ -22,15 +49,7 @@ function NavBar() {
         PHOTO GALLERY
       </Link>
       <div className="MenuBar">
-        <button type="button" className="Button1" onClick={navigateToSignUp}>
-          SIGN UP
-        </button>
-        <button type="button" className="Button2" onClick={navigateToLogin}>
-          LOG IN
-        </button>
-        <button type="button" className="Button2" onClick={navigateToHome}>
-          LOGOUT
-        </button>
+        <RenderMenu />
       </div>
     </div>
   );
