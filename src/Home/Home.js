@@ -1,10 +1,5 @@
 import "./Home.css";
 import "../NavigationBar/NavBar";
-import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.svg";
-import mail from "../assets/mail.svg";
-import twitter from "../assets/twitter.svg";
-import instagram from "../assets/instagram.svg";
 
 function Home() {
   return (
@@ -25,27 +20,33 @@ function Home() {
                 href="https://www.linkedin.com/in/savitri-khyadad/"
                 target="./dummy"
               >
-                <img src={linkedin} alt="icon1" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/linkedin.svg`}
+                  alt="icon1"
+                />
               </a>
             </div>
             <div className="Link2">
               <a href="https://github.com/Savitri-Khyadad" target="./dummy">
-                <img src={github} alt="icon2" />
+                <img src={`${process.env.PUBLIC_URL}/github.svg`} alt="icon2" />
               </a>
             </div>
             <div className="Link3">
               <a href="https://www.instagram.com/" target="./dummy">
-                <img src={instagram} alt="icon" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/instagram.svg`}
+                  alt="icon"
+                />
               </a>
             </div>
             <div className="Link3">
               <a href="https://www.twitter.com/" target="./dummy">
-                <img src={twitter} alt="icon" />
+                <img src={`${process.env.PUBLIC_URL}/twitter.svg`} alt="icon" />
               </a>
             </div>
             <div className="Link3">
               <a href="https://www.gmail.com/" target="./dummy">
-                <img src={mail} alt="icon" />
+                <img src={`${process.env.PUBLIC_URL}/mail.svg`} alt="icon" />
               </a>
             </div>
           </div>

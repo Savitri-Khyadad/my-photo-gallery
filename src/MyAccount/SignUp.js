@@ -2,9 +2,6 @@ import "./SignUp.css";
 import React, { useContext, useState, useEffect } from "react";
 import { UserContext } from "../App";
 import { useNavigate } from "react-router-dom";
-import user from "../assets/user.svg";
-import password from "../assets/password.svg";
-import mail from "../assets/mail.svg";
 
 function SignUp() {
   const { state, dispatch } = useContext(UserContext);
@@ -80,7 +77,7 @@ function SignUp() {
         </div>
         <div className="Form">
           <div className="Input">
-            <img src={user} alt="icon"></img>
+            <img src={`${process.env.PUBLIC_URL}/user.svg`} alt="icon"></img>
             <input
               type="text"
               name="username"
@@ -91,7 +88,7 @@ function SignUp() {
           </div>
           <p>{errors.username}</p>
           <div className="Input">
-            <img src={mail} alt="icon"></img>
+            <img src={`${process.env.PUBLIC_URL}/mail.svg`} alt="icon"></img>
             <input
               type="email"
               name="email"
@@ -102,7 +99,10 @@ function SignUp() {
           </div>
           <p>{errors.email}</p>
           <div className="Input">
-            <img src={password} alt="icon"></img>
+            <img
+              src={`${process.env.PUBLIC_URL}/password.svg`}
+              alt="icon"
+            ></img>
             <input
               type="password"
               name="password"
